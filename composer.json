@@ -1,0 +1,35 @@
+{
+    "name": "speeddigit/localization",
+    "description": "Localization solution for Laravel apps",
+    "type": "library",
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "SpeedDigit\\Localization\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Tests\\" : "tests/"
+        }
+    },
+    "extra" : {
+        "laravel" : {
+            "providers" : [
+                "SpeedDigit\\Localization\\LocalizationServiceProvider"
+            ]
+        }
+    },
+    "authors": [
+        {
+            "name": "speeddigitteam"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require-dev": {
+        "phpunit/phpunit": "10.0.x-dev"
+    },
+    "scripts": {
+        "test": "vendor\\bin\\phpunit"
+    }
+}
